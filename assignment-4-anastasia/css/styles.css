@@ -1,0 +1,111 @@
+/* Global Variables */
+:root {
+    --grey: #666F74;
+    --hover: #0A91DE;
+    --grey-50: #eceff1;
+    --grey-100: #cfd8dc;
+    --grey-900: #263238;
+    --box-shadow: 10px 10px 19px 0px rgba(236, 239, 241, 1);
+    --font-family: "Open Sans", sans-serif;
+}
+
+body {
+    color: var(--grey-900);
+    font-family: "Manrope", sans-serif;
+}
+
+svg {
+    width: 1rem;
+    fill: white;
+    stroke: var(--grey);
+}
+
+/* GENERAL CONTAINERS/UTILITY....................................*/
+.inner-container {
+    max-width: 67.5rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* HEADER........................................................*/
+h1 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.1;
+
+    color: var(--cyan-900);
+
+}
+
+h1 span {
+    color: #0A91DE;
+    font-weight: bold;
+
+}
+
+header {
+    border-bottom: .0625rem solid var(--grey-100);
+    box-shadow: var(--box-shadow);
+    padding: 0.25rem 1rem;
+    padding-bottom: .5rem;
+
+}
+
+header p {
+    font-size: 1.5rem;
+    color: var(--grey);
+    border-bottom: .0625rem solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: .5rem;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu li {
+    margin-bottom: 1.5rem;
+    /* this make the icons aligned with text, not structure */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.main-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+a {
+    color: var(--grey);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+a:hover,
+a:focus {
+    color: var(--hover);
+}
+
+.sub-menu {
+    position: absolute;
+    left: 15%;
+    top: -1.5rem;
+    min-width: 10.875rem;
+    background-color: white;
+    border: .0625rem solid var(--grey-900);
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+    padding: 1.125rem;
+}
+
+.sub-menu a {
+    padding: 1.125rem;
+    border-bottom: .0625rem solid #ddd;
+}
